@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+:root{
+    --mid-header-font-color:#a5a5a5;
+    --primary-borders: 1px solid #c8c8c8; ;
+    --top-header-background-color: #333;
+    --top-header-font-color: #cfcfcf;
+    --header-font-size: 16px;
+    --page-width: calc(100% - 350px - 350px);
+
+}
+/* header style */
+.top-header{
+    height: 29px;
+    width: 100%;
+    background-color: var(--top-header-background-color);
+    font-size: var(--top-header-font-size);
+}
+.top-header > div{
+    width: var(--page-width);
+    margin-left: 350px;
+    height: 29px;
+    align-items: center;
+    font-size: var(--header-font-size);
+    color: var(--top-header-font-color);
+    display: flex;
+    justify-content: space-between;
+}
+.top-header > div a{
+    color: var(--top-header-font-color);
+}
+.top-header-left-section{
+    display: flex;
+    align-items: center;
+    height: 29px;
+}
+.top-header-left-section a{
+    margin-left: 50px;
+    text-decoration: underline;
+}
+.top-header-right-section a{
+    margin-right: 20px;
+    text-decoration: underline;
+    height: 29px;
+}
+.mid-header{
+    border-top: var(--primary-borders);
+    border-bottom: var(--primary-borders);
+    margin-top: 8px;
+}
+.mid-header > div{
+    margin-left: 350px;
+    width: var(--page-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mid-header > div ul li{
+    float: left;
+    border-left: var(--primary-borders);
+    font-size: var(--header-font-size);
+    height: 80px;
+    padding: 25px 55px 25px 25px;
+    color: var(--mid-header-font-color);
+    display: flex;
+    align-items: center;
+}
+.mid-header > div ul :last-child{
+    border-right: var(--primary-borders);
+}
+.bot-header{
+    border-bottom: var(--primary-borders);
+}
+.bot-header-center-div{
+    margin-left: 350px;
+    width: var(--page-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.bot-header-left-section form{
+    display: flex;
+    align-items: center;
+}
+::placeholder{
+    float: right;
+    padding: 10px 20px;
+    color: #a5a5a5;
+    font-size: 18px;
+    
+}
+.bot-header-left-section form button{
+    padding: 10px;
+    border: var(--primary-borders);
+}
+[name="search"]{
+    width:450px;
+    height: 50px;
+    border: var(--primary-borders);
+}
+.bot-header-right-section{
+    display: flex;
+    align-items: center;
+}
+.bot-header-right-section a{
+    margin-right: 20px;
+}
+.bot-header-right-section p{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.bot-header-right-section :nth-child(2){
+    padding: 15px 40px;
+    border: var(--primary-borders);
+    background-color: #333;
+    color: #ffff;
+    border-radius: 5px;
+}
+.bot-header-right-section :nth-child(3),
+.bot-header-right-section :nth-child(4){
+    padding: 8px;
+    border: var(--primary-borders);
+    border-radius: 5px;
+}
+.bot-header-right-section :nth-child(5){
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.bot-header-right-section :first-child p{
+    color: #333;
+}
+/* content style */
+.main-img-slider{
+    margin-top: 20px;
+    margin-left: 350px;
+    width: var(--page-width);
+}
+.main-img-slider img{
+    width: 100%;
+    height: 100%;
+}
+.content-gray-background{
+    background-color: #ebebeb;
+    margin-top: 20px;
+}
+.content-center-div-top-section{
+    margin-left: 350px;
+    width: var(--page-width);
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: var(--primary-borders);
+    border-radius: 10px 10px 0 0;
+}
+.content-center-div-top-section > div{
+    margin: 20px;
+    border: var(--primary-borders);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.content-center-div-top-section > div > div a{
+    display: block;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.content-center-div-top-section > div > div span{
+    padding: 0 10px;
+    display: block;
+}
+.content-center-div-bot-section{
+    margin-left: 350px;
+    width: var(--page-width);
+    border: var(--primary-borders);
+    background-color: #ffff;
+}
+.content-center-div-bot-section-title-style-1 h2{
+    padding: 10px;
+    background-color: rgba(140,76,242,.84);
+    border: var(--primary-borders);
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.content-center-div-bot-section > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: #ffff;
+}
+.content-center-div-bot-section > div > div{
+    border: var(--primary-borders);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;   
+}
+.content-center-div-bot-section > div > div h3{
+    margin: 10px;
+}
+.content-center-div-bot-section-title-style-2 h2{
+    padding: 10px;
+    background-color: #ebebeb;
+    border: var(--primary-borders);
+    text-align: center;
+    color: #000000;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+/* footer style */
+.footer-gray-background{
+    background-color: #ebebeb;
+}
+.footer-banner{
+    margin-left: 350px;
+    width: var(--page-width);
+    padding: 30px 0;
+}
+.footer-banner img{
+    width: 100%;
+    height: 100%;
+}
+.top-footer{
+    margin-left: 350px;
+    width: var(--page-width);
+    display: flex;
+    justify-content: space-between;
+}
+.top-footer-left ul li{
+    line-height: 2;
+}
+.top-footer-right{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+.top-footer-right ul{
+    padding: 0 50px;
+}
+.top-footer-right ul li{
+    line-height: 2;
+}
+.bot-footer{
+    border-top: var(--primary-borders);
+}
+.bot-footer > div{
+    margin-left: 350px;
+    width: var(--page-width);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
